@@ -1,0 +1,23 @@
+{
+	"name": "My Python Collab Project",
+	"build": {
+		// This path is relative to the devcontainer.json file.
+		// "../" means "go up one level" to find the Dockerfile.
+		"dockerfile": "../Dockerfile"
+	},
+
+	// This tells VS Code to forward port 5000 from the container
+	// to your local machine, so you can see your web app.
+	"forwardPorts": [5000],
+
+	// This tells VS Code which extensions to automatically
+	// install inside the container for a great Python experience.
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-python.python",
+				"ms-python.vscode-pylance"
+			]
+		}
+	}
+}
